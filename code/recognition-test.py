@@ -38,12 +38,8 @@ for arq in glob.glob(os.path.join('../photos/validation', "*.jpg")):
 
         # Limiar
         if dists[min] <= 0.5:
-            name = "Barack Obama"
-        else:
-            name = "Unknown"
-
-        cv2.rectangle(img, (l, t), (r, b), (0, 0, 255), 2)
-        cv2.putText(img, name, (r, t), cv2.FONT_HERSHEY_COMPLEX_SMALL, 0.5, (0, 0, 255))
+            cv2.rectangle(img, (l, t), (r, b), (0, 255, 255), 2)
+            cv2.putText(img, "Obama", (r, t), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (0, 0, 255))
 
     cv2.imshow("Face Recognition", img)
     cv2.waitKey(0)
