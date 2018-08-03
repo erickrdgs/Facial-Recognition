@@ -3,6 +3,7 @@ import glob
 import dlib
 import cv2
 import numpy as np
+from PIL import Image
 
 # Detectores de face e pontos faciais
 faceDetector = dlib.get_frontal_face_detector()
@@ -11,12 +12,21 @@ landmarkDetector = dlib.shape_predictor('../resources/shape_predictor_68_face_la
 # Usa redes neurais convolucionais
 facialRecognition = dlib.face_recognition_model_v1('../resources/dlib_face_recognition_resnet_model_v1.dat')
 
-# Carrega descritores faciais (treinamento)
+# Carrega descritores faciais e labels
 facialDescriptors = np.load("../resources/descriptors.npy")
+labels = np.load("../resources/labels.pickle")
+
+totalFaces = 0
+successes = 0
 
 # Percorre as imagens de validação enquanto detecta faces
-for arq in glob.glob(os.path.join('../photos/validation', "*.jpg")):
-    img = cv2.imread(arq)
+for arq in glob.glob(os.path.join('../yalefaces/validation', "*.gif")):
+    # Imagens do yalefaces Dataset são .gif portanto é necessário convertê-las
+    imgFace = Image.open(arq).convert('RGB')
+    img = np.array(imgFace, 'uint8')
+
+    id = int(os.path.split(arq)[1].split(".")[0].replace("subject", ""))
+    totalFaces += 1
 
     detectedFaces = faceDetector(img, 2)
 
@@ -38,10 +48,17 @@ for arq in glob.glob(os.path.join('../photos/validation', "*.jpg")):
 
         # Limiar
         if dists[min] <= 0.5:
-            cv2.rectangle(img, (l, t), (r, b), (0, 255, 255), 2)
-            cv2.putText(img, "Obama", (r, t), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (0, 0, 255))
+            name = os.path.split(labels[min])[1].split(".")[0]
+            cv2.rectangle(img, (l, t), (r, b), (0, 0, 255), 1)
+            cv2.putText(img, name, (l, t), cv2.FONT_HERSHEY_COMPLEX_SMALL, 0.5, (0, 0, 255))
+
+            id2 = int(os.path.split(labels[min])[1].split(".")[0].replace("subject", ""))
+            if id == id2:
+                successes += 1
 
     cv2.imshow("Face Recognition", img)
     cv2.waitKey(0)
+
+print((successes / totalFaces) * 100)
 
 cv2.destroyAllWindows()

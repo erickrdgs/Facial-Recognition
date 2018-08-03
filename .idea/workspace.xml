@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0111404d-fba3-4304-8603-8a608e2cb37f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/recognition-test.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/recognition-test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/photos/validation/Validation1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/photos/validation/Validation1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/photos/validation/Validation2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/photos/validation/Validation2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/photos/validation/Validation7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/photos/validation/Validation7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/photos/validation/validation11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/photos/validation/validation11.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/photos/validation/validation8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/photos/validation/validation8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/recognition-training.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/recognition-training.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/descriptors.npy" beforeDir="false" afterPath="$PROJECT_DIR$/resources/descriptors.npy" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,31 +52,33 @@
     <session id="749956459">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.28" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.35" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="134" />
+          <entry key="py" value="928" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="134" />
+          <entry key="Python" value="928" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="gif" value="1" />
           <entry key="jpg" value="12" />
           <entry key="py" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Image" value="12" />
+          <entry key="Image" value="13" />
           <entry key="Python" value="1" />
         </counts>
       </usages-collector>
@@ -91,11 +89,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/recognition-training.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="39" column="82" selection-start-line="39" selection-start-column="82" selection-end-line="39" selection-end-column="82" />
+            <state relative-caret-position="176">
+              <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
-                <marker date="1533265454017" expanded="true" signature="102:103" ph="..." />
+                <marker date="1533333849266" expanded="true" signature="139:140" ph="..." />
               </folding>
             </state>
           </provider>
@@ -104,8 +102,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/code/recognition-test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="438">
+              <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -130,13 +128,14 @@
       <list>
         <option value="$PROJECT_DIR$/FacialRecognition.py" />
         <option value="$PROJECT_DIR$/code/facial-recognition.py" />
-        <option value="$PROJECT_DIR$/code/recognition-test.py" />
         <option value="$PROJECT_DIR$/code/recognition-training.py" />
+        <option value="$PROJECT_DIR$/code/recognition-test.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="974" />
     <option name="height" value="1087" />
   </component>
@@ -145,7 +144,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -156,34 +154,25 @@
             <path>
               <item name="facial-recognition" type="b2602c69:ProjectViewProjectNode" />
               <item name="facial-recognition" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="yalefaces" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="facial-recognition" type="b2602c69:ProjectViewProjectNode" />
               <item name="facial-recognition" type="462c0819:PsiDirectoryNode" />
-              <item name="photos" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="facial-recognition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="facial-recognition" type="462c0819:PsiDirectoryNode" />
-              <item name="photos" type="462c0819:PsiDirectoryNode" />
+              <item name="yalefaces" type="462c0819:PsiDirectoryNode" />
               <item name="training" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="facial-recognition" type="b2602c69:ProjectViewProjectNode" />
               <item name="facial-recognition" type="462c0819:PsiDirectoryNode" />
-              <item name="photos" type="462c0819:PsiDirectoryNode" />
+              <item name="yalefaces" type="462c0819:PsiDirectoryNode" />
               <item name="validation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="facial-recognition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="facial-recognition" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -192,6 +181,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\erick\Documents\github\facial-recognition" />
       <recent name="C:\Users\erick\Documents\github\dlib\photos\validation" />
       <recent name="C:\Users\erick\Documents\github\dlib\photos\training" />
       <recent name="C:\Users\erick\Documents\github\dlib\resources" />
@@ -326,12 +316,12 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17913593" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17913593" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32948583" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32640332" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32633787" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3253638" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -409,21 +399,24 @@
     <entry file="file://$PROJECT_DIR$/photos/training/Obama.0.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/yalefaces/validation/subject01.glasses.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/code/recognition-training.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="39" column="82" selection-start-line="39" selection-start-column="82" selection-end-line="39" selection-end-column="82" />
+        <state relative-caret-position="176">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-            <marker date="1533265454017" expanded="true" signature="102:103" ph="..." />
+            <marker date="1533333849266" expanded="true" signature="139:140" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/code/recognition-test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="438">
+          <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
